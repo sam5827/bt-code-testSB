@@ -58,8 +58,7 @@ public class Matching
      *	STEP 1: Filter out non-alphabetic characters by using a regular expression.
      *	STEP 2: Ignore the case of characters in the surname by converting them to 
      *	lowercase.
-     *	STEP 3: After the first letter, remove the letters A,E,I,H,O,U,W,Y and
-     *	replace them with the placeholder '#'.
+     *	STEP 3: After the first letter, remove the letters A,E,I,H,O,U,W,Y.
      *  @param s A surname object that needs preprocessing.
     */
 	public static void preprocessSurname(Surname s)
@@ -68,7 +67,7 @@ public class Matching
 		String surnameHolder = s.getSurnameOriginal();
 		// remove non-alphabetical characters and convert to lower case
 		surnameHolder = surnameHolder.replaceAll("[^a-zA-Z]", "").toLowerCase();
-		// remove A,E,I,H,O,U,W,Y after the first letter and replace with a placeholder
+		// remove A,E,I,H,O,U,W,Y after the first letter
 		surnameHolder = surnameHolder.substring(0,1) + surnameHolder.substring(1).replaceAll("[aeihouwy]", "");
 		// set the preprocessed variable for this object
 		s.setSurnamePreprocessed(surnameHolder);
@@ -112,8 +111,8 @@ public class Matching
      *	are considered as a single occurence. This is checked upon applying a
      *	weight to a character. An assumption has been made here that if a disregarded
      *	character is in between 2 characters of the same class (E.g. 'SYS' in the made
-     *	up surname 'tafSYSen' - 'Y' is disregarded, all 'SYS' are equivalent), then
-     *	the two S's will be counted individually and NOT as a single occurrence. 
+     *	up surname 'tafSYSen' - 'Y' is disregarded and removed giving 'SS'), then
+     *	the two S's will be counted as a single occurrence. 
      *	@param s The surname to be considered.
      *	@return An integer representing the total weight for this surname.
     */
