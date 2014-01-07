@@ -10,7 +10,8 @@ import org.junit.Test;
 import phonetic_search.IOManager;
 import phonetic_search.Surname;
 
-public class TestFileInput {
+public class TestIOManager
+{
 
 	private IOManager fi;
 	private File f;
