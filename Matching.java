@@ -69,7 +69,7 @@ public class Matching
 		// remove non-alphabetical characters and convert to lower case
 		surnameHolder = surnameHolder.replaceAll("[^a-zA-Z]", "").toLowerCase();
 		// remove A,E,I,H,O,U,W,Y after the first letter and replace with a placeholder
-		surnameHolder = surnameHolder.substring(0,1) + surnameHolder.substring(1).replaceAll("[aeihouwy]", "#");
+		surnameHolder = surnameHolder.substring(0,1) + surnameHolder.substring(1).replaceAll("[aeihouwy]", "");
 		// set the preprocessed variable for this object
 		s.setSurnamePreprocessed(surnameHolder);
 	}
@@ -143,7 +143,7 @@ public class Matching
 			else
 				skip = false; // else it must be different, so don't ignore it
 		}
-		
+		// return the weight of the surname
 		return weightSum;
 	}
 	
