@@ -7,9 +7,6 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
-import phonetic_search.IOManager;
-import phonetic_search.Surname;
-
 public class TestIOManager
 {
 

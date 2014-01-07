@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
-import phonetic_search.Matching;
-import phonetic_search.Surname;
-
 public class TestMatching {
 
 	private ArrayList<Surname> names;
