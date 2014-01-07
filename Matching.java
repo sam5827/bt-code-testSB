@@ -26,13 +26,6 @@ public class Matching
 	private static final Set<Character> TIER5_SET = new HashSet<Character>(Arrays.asList(TIER5_ARR));
 	
 	/**
-	 *	Default Constructor
-	*/
-	public Matching()
-	{	
-	}
-	
-	/**
      *  A public static method that applies steps 1-3 of the matching algorithm to 
 	 *	the list of surnames obtained from the text file.
      *  @param arr An ArrayList of Surname objects that must have the surnameOriginal
