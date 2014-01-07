@@ -74,10 +74,10 @@ public class IOManager
 		nameList = Matching.applyWeights(nameList);
 	}
 
-	public ArrayList<Surname> getNameList()
-	{
-		return this.nameList;
-	}
+	// public ArrayList<Surname> getNameList()
+	// {
+	// 	return this.nameList;
+	// }
 
 	/**
 	 *	A public method that takes a surname and find the matches in the nameList. A
