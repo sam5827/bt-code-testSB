@@ -95,8 +95,7 @@ public class Matching
 		else if (TIER5_SET.contains(c))
 			return 5;
 		else
-			return 0; // all other characters (only L & R) and the placeholder (#)
-		// get a weight of 0
+			return 0; // all other characters (only L & R) get a weight of 0
 	}
 	
 	/**
