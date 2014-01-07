@@ -16,9 +16,9 @@ public class IOManager
     private LineNumberReader lnr;
     
     /** A list of names parsed from the text file to match against */
-    private ArrayList<Surname> nameList;
+    ArrayList<Surname> nameList;
     /** A list of the matches found */
-    private ArrayList<String> matches;
+    ArrayList<String> matches;
 
     /**
      *  IOManager Class constructor. Creates a FileInputStream, InputStreamReader
