@@ -9,9 +9,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import phonetic_search.IOManager;
-import phonetic_search.Surname;
-
 public class TestIOManager {
 
 	private IOManager fi;
