@@ -60,7 +60,7 @@ public class IOManager
 			{
 				// create a new Surname object with the surname on that line
 				// in the text file.
-				Surname next = new Surname(line;
+				Surname next = new Surname(line);
 				// add the new line as a new entry to the array list
 				nameList.add(next);	
 			}
