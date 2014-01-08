@@ -8,6 +8,9 @@ To run the program…
 	java Run surnames.txt Smith Jones Winton
    This would run the program using the surnames.txt file and would find matches for the surnames “Smith”, “Jones” and “Winton”.
 
+If an IOException is thrown due to the filename being incorrect, the program will ask you to supply the arguments again.
+If there is no file to be passed to the program, press CTRL+C to exit the program.
+
 To run the unit tests…
 Note: These Unit Tests use JUnit 4.6. The program does not rely on JUnit to work but the Unit tests however do.
 1) Copy the unit tests from the “tests” directory into the directory where the code for the program is located.
